@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla" />
+    <title>RT</title>
+
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header class="container-fluid bg-dark position-sticky top-0 ">
+        <ul class="nav nav-pills mb-3 py-3 container d-flex justify-content-end" id="pills-tab" role="tablist">
+            <li class="nav-item text-primary" role="presentation">
+                <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link bi bi-cart2 " id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false"></a>
+            </li>
+        </ul>
+    </header>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto removido!
+    </div>
+
+    <div class="tab-content show active " id="pills-tabContent">
+        <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="./img/banerhome.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/monitoresbanerhome.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/1baner2home.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="bannerpc">
+                <div class="pc-armadas">
+                    <img src="./img/pc-armadas.png" alt="">
+                </div>
+                <div class="arma-pc">
+                    <img src="./img/armapc.png" alt="">
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./img/marca1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca6.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca7.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca8.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca9.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca10.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca11.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca12.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca13.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca14.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca15.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca16.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/marca17.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="tab-pane fade show active container-fluid " id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <div class="filtro-productos bg-secondary col container">
+                <ul>
+                    <li>
+                        <a id="procesadoresintel"href="#">procesadores intel</a>
+                    </li>
+                    <li>
+                        <a id="procesadoresamd"href="#">procesadores amd</a>
+                    </li>
+                    <li>
+                        <a id="videonvidia" href="#">placas de video nvidia</a>
+                    </li>
+                    <li>
+                        <a id="videoamd"href="#">placas de video amd</a>
+                    </li>
+                    <li>
+                        <a id="memoriasram" href="#">memorias ram</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title 4</h5>
+                        <img src="./img/i3-10100f.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Modelo
+                                10100F
+                                Socket
+                                1200 Comet Lake
+                                Núcleos
+                                4
+                                Frecuencia
+                                3600.00 mhz
+                                Proceso De Fabricación
+                                14 nm
+                                Chipset Gpu
+                                NO Posee Gráficos Integrados
+                                Hilos
+                                8
+                                Frecuencia Turbo
+                                4300 mhz
+                                Familia
+                                Intel Core i3</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title 5</h5>
+                        <img src="./img/i3-10100f.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Modelo
+                                10100F
+                                Socket
+                                1200 Comet Lake
+                                Núcleos
+                                4
+                                Frecuencia
+                                3600.00 mhz
+                                Proceso De Fabricación
+                                14 nm
+                                Chipset Gpu
+                                NO Posee Gráficos Integrados
+                                Hilos
+                                8
+                                Frecuencia Turbo
+                                4300 mhz
+                                Familia
+                                Intel Core i3</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title 6</h5>
+                        <img src="./img/i3-10100f.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Modelo
+                                10100F
+                                Socket
+                                1200 Comet Lake
+                                Núcleos
+                                4
+                                Frecuencia
+                                3600.00 mhz
+                                Proceso De Fabricación
+                                14 nm
+                                Chipset Gpu
+                                NO Posee Gráficos Integrados
+                                Hilos
+                                8
+                                Frecuencia Turbo
+                                4300 mhz
+                                Familia
+                                Intel Core i3</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title 7</h5>
+                        <img src="./img/i3-10100f.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Modelo
+                                10100F
+                                Socket
+                                1200 Comet Lake
+                                Núcleos
+                                4
+                                Frecuencia
+                                3600.00 mhz
+                                Proceso De Fabricación
+                                14 nm
+                                Chipset Gpu
+                                NO Posee Gráficos Integrados
+                                Hilos
+                                8
+                                Frecuencia Turbo
+                                4300 mhz
+                                Familia
+                                Intel Core i3</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title 8</h5>
+                        <img src="./img/i3-10100f.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Modelo
+                                10100F
+                                Socket
+                                1200 Comet Lake
+                                Núcleos
+                                4
+                                Frecuencia
+                                3600.00 mhz
+                                Proceso De Fabricación
+                                14 nm
+                                Chipset Gpu
+                                NO Posee Gráficos Integrados
+                                Hilos
+                                8
+                                Frecuencia Turbo
+                                4300 mhz
+                                Familia
+                                Intel Core i3</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="tab-pane fade carrito container" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <br>
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Productos</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                </tbody>
+            </table>
+            <br><br>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal text-dark">Total: 0</h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button id="btncomprar" class="btn btn-success">COMPRAR</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/l/es/download"><i class="fab fa-snapchat"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+            <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="./secciones/servicios.html">Services</a>
+            </li>
+            <li>
+                <a href="./secciones/contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <ul>
+            <p class="copyright">Ramiro Carusi @2022
+            </p>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./icons/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/Ram tecno js proyecto final/js/app.js"></script>
+
+</body>
+
+</html>
