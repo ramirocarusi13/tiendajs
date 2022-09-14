@@ -3,6 +3,39 @@ const Clickbutton = document.querySelectorAll('.button')
 const tbody = document.querySelector('.tbody')
 let carrito = []
 
+document.querySelector("#procesadoresintel").addEventListener("click",traerDatos);
+let contenido = document.querySelector('#cardproducto')
+function traerDatos(){
+  fetch('../productos/procesadoresintel.json')
+    .then( res => res.json() )
+    .then( datos => {
+      card(datos) 
+    } )
+}
+function card(datos) {
+  contenido.innerHTML = ''
+  for (let valor of datos){
+    contenido.innerHTML += `
+    
+    <div class="col d-flex justify-content-center mb-4">
+      <div class="card-produ shadow mb-1 bg-dark rounded" style="width: 20rem;">
+        <h5 class="card-title-produ pt-2 text-center text-primary">${valor.nombre}</h5>
+        <img src="./img/i3-10100f.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text text-white-50 description">${valor.descripcion}</p>
+            <h5 class="text-primary">Precio: <span class="precio">$ ${valor.precio}</span></h5>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+  `
+  }
+}
+
 Clickbutton.forEach(btn => {
   btn.addEventListener('click', addToCarritoItem)
 })
@@ -10,8 +43,8 @@ Clickbutton.forEach(btn => {
 
 function addToCarritoItem(e){
   const button = e.target
-  const item = button.closest('.card')
-  const itemTitle = item.querySelector('.card-title').textContent;
+  const item = button.closest('.card-produ')
+  const itemTitle = item.querySelector('.card-title-produ').textContent;
   const itemPrice = item.querySelector('.precio').textContent;
   const itemImg = item.querySelector('.card-img-top').src;
   
@@ -62,9 +95,9 @@ function renderCarrito(){
     <th scope="row">1</th>
             <td class="table__productos">
               <img src=${item.img}  alt="">
-              <h6 class="title">${item.title}</h6>
+              <h6 class="title">${valor.nombre}</h6>
             </td>
-            <td class="table__price"><p>${item.precio}</p></td>
+            <td class="table__price"><p>${valor.precio}</p></td>
             <td class="table__cantidad">
               <input type="number" min="1" value=${item.cantidad} class="input__elemento">
               <button class="delete btn btn-danger">x</button>
@@ -151,38 +184,7 @@ function alertafachera(){
 comprar.addEventListener('click',alertafachera);
 
 
-document.querySelector("#procesadoresintel").addEventListener("click",traerDatos);
-let contenido = document.querySelector('#cardproducto')
-function traerDatos(){
-  fetch('../productos/procesadoresintel.json')
-    .then( res => res.json() )
-    .then( datos => {
-      card(datos) 
-    } )
-}
-function card(datos) {
-  contenido.innerHTML = ''
-  for (let valor of datos){
-    contenido.innerHTML += `
-    
-    <div class="col d-flex justify-content-center mb-4">
-      <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-        <h5 class="card-title pt-2 text-center text-primary">${valor.nombre}</h5>
-        <img src="./img/i3-10100f.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text text-white-50 description">${valor.descripcion}</p>
-            <h5 class="text-primary">Precio: <span class="precio">$ ${valor.precio}</span></h5>
-            <div class="d-grid gap-2">
-                <button class="btn btn-primary button">Añadir a Carrito</button>
-            </div>
-        </div>
-      </div>
-    </div>
 
-
-  `
-  }
-}
 
 
 
