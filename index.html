@@ -87,7 +87,7 @@
                     <img src="./img/armapc.png" alt="">
                 </div>
             </div>
-            <div class="slider">
+            <div class="slider container">
                 <div class="slide-track">
                     <div class="slide">
                         <img src="./img/marca1.jpg" alt="">
@@ -142,10 +142,14 @@
                     </div>
                 </div>
             </div>
+            <div class="productos container">
+                <h2>productos</h2>
+            </div>
         </div>
-        <div  class="tab-pane fade show active container-fluid " id="pills-profile" role="tabpanel"
+        <div  class="tab-pane fade show active  " id="pills-profile" role="tabpanel"
             aria-labelledby="pills-profile-tab">
-            <div class="filtro-productos bg-dark col container">
+            <div id="containerproductos" class="container-fluid d-flex">
+                <div class="filtro-productos bg-dark  container ">
                 <ul>
                     <li>
                         <a id="procesadoresintel"href="#">procesadores intel</a>
@@ -163,9 +167,9 @@
                         <a id="memoriasram" href="#">memorias ram</a>
                     </li>
                 </ul>
-            </div>
+                </div>
 
-            <div id="cardproducto" class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div id="cardproducto" class="row ms-4 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 
                 <div class="col d-flex justify-content-center mb-4">
                     <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
@@ -319,6 +323,7 @@
                 </div>
 
 
+                </div>
             </div>
         </div>
         <div class="tab-pane fade carrito container" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">

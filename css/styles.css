@@ -2,6 +2,14 @@
 
 body{
   background-color: #fdfdfdea;
+  box-sizing: 0;
+  margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+  
 }
 
 header, .alert{
@@ -15,6 +23,7 @@ header, .alert{
 .description:hover{
   height: 80px;
 }
+
 
 
 .carrito{
@@ -83,6 +92,29 @@ header, .alert{
 } 
 .bannerpc img{
   width: 100%;
+}
+/*#containerproductos{
+  
+}*/
+.filtro-productos{
+  width: 30%;
+  padding: auto;
+  margin-left: 20px;
+  margin-bottom: 28px;
+}
+
+.filtro-productos ul {
+  display: flex;
+  padding:auto;
+  margin-top: 40px;
+  list-style: none;
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+}
+.filtro-productos ul li{
+  padding: 5px;
+  
 }
 
 footer{
