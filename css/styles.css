@@ -12,6 +12,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+
 header, .alert{
   z-index: 100;
 }
@@ -23,6 +24,7 @@ header, .alert{
 .description:hover{
   height: 80px;
 }
+
 
 
 

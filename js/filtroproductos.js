@@ -1,4 +1,5 @@
 document.querySelector("#procesadoresintel").addEventListener("click", traerprocesadoresintel);
+
 let contenido = document.querySelector('#cardproducto')
 function traerprocesadoresintel() {
     fetch('../procesadoresintel.json')
@@ -11,6 +12,7 @@ function card(datos) {
     contenido.innerHTML = ''
     for (let valor of datos) {
         contenido.innerHTML += `
+
     
     <div class="col d-flex justify-content-center mb-4">
       <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
