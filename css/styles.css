@@ -9,7 +9,7 @@ body{
 	text-decoration: none;
 	border: none;
 	outline: none;
-  
+  font-family: 'Roboto', sans-serif;
 }
 
 header, .alert{
@@ -93,14 +93,19 @@ header, .alert{
 .bannerpc img{
   width: 100%;
 }
-/*#containerproductos{
-  
-}*/
+#pills-profile{
+  background-color: gray;
+}
+#containerproductos{
+  background-color: rgb(255, 255, 255);
+}
+
 .filtro-productos{
   width: 30%;
   padding: auto;
   margin-left: 20px;
-  margin-bottom: 28px;
+
+
 }
 
 .filtro-productos ul {
@@ -110,11 +115,17 @@ header, .alert{
   list-style: none;
   flex-direction: column;
   justify-content: start;
+}
+.filtro-productos ul li .link{
   color: white;
+  text-decoration: none;
 }
 .filtro-productos ul li{
-  padding: 5px;
-  
+  padding: 2px;
+}
+.filtro-productos ul li .link:hover{
+
+  color: rgb(0, 3, 182);
 }
 
 footer{
