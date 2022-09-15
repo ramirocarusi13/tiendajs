@@ -37,7 +37,7 @@ document.querySelector("#procesadoresamd").addEventListener("click", traerproces
 
 
 function traerprocesadoresamd() {
-    fetch('../procesadoresamd.json')
+    fetch('procesadoresamd.json')
         .then(res => res.json())
         .then(datos => {
             card(datos)
@@ -71,7 +71,7 @@ document.querySelector("#videonvidia").addEventListener("click", traerplacasvide
 
 
 function traerplacasvideonvidia() {
-    fetch('../placasvideonvidia.json')
+    fetch('placasvideonvidia.json')
         .then(res => res.json())
         .then(datos => {
             card(datos)
@@ -105,7 +105,7 @@ document.querySelector("#videoamd").addEventListener("click", traerplacasvideoam
 
 
 function traerplacasvideoamd() {
-    fetch('../placasvideoamd.json')
+    fetch('placasvideoamd.json')
         .then(res => res.json())
         .then(datos => {
             card(datos)
@@ -139,7 +139,7 @@ document.querySelector("#memoriasram").addEventListener("click", traermemoriasra
 
 
 function traermemoriasram() {
-    fetch('../memoriasram.json')
+    fetch('memoriasram.json')
         .then(res => res.json())
         .then(datos => {
             card(datos)
