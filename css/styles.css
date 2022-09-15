@@ -85,6 +85,7 @@ header, .alert{
   }
 
 }
+
 .bannerpc{
   width: auto;
   margin: auto;
@@ -94,6 +95,9 @@ header, .alert{
 } 
 .bannerpc img{
   width: 100%;
+}
+.bannerpc img:hover{
+  zoom: 5px;
 }
 #pills-profile{
   background-color: gray;

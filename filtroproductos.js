@@ -1,8 +1,8 @@
 document.querySelector("#procesadoresintel").addEventListener("click", traerprocesadoresintel);
-
 let contenido = document.querySelector('#cardproducto')
+
 function traerprocesadoresintel() {
-    fetch('../procesadoresintel.json')
+    fetch('procesadoresintel.json')
         .then(res => res.json())
         .then(datos => {
             card(datos)
