@@ -101,11 +101,11 @@ function card(datos) {
     }
 }
 /*##########################################################################################################*/
-document.querySelector("#videoamd").addEventListener("click", traerplacasvideoamd);
+document.querySelector("#videoamd").addEventListener("click", traervideoamd);
 
 
-function traerplacasvideoamd() {
-    fetch('placasvideoamd.json')
+function traervideoamd() {
+    fetch('videoamd.json')
         .then(res => res.json())
         .then(datos => {
             card(datos)
@@ -169,7 +169,8 @@ function card(datos) {
     }
 }
 /*#########################################################################33*/
-document.querySelector("destacados").addEventListener("click",traerdestacados());
+document.querySelector("#destacados").addEventListener("click",traerdestacados());
+document.querySelector("#destacados").addEventListener("click",traerdestacados);
 
 
 function traerdestacados() {

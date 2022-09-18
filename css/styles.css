@@ -105,13 +105,13 @@ header, .alert{
   height: auto;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 } 
 .bannerpc img{
   width: 100%;
+  transition: 0,5s;
 }
-.bannerpc img:hover{
-  zoom: 5px;
-}
+
 #pills-profile{
   background-color: gray;
 }
@@ -205,4 +205,44 @@ footer .copyright {
   text-align: center;
   font-size: 13px;
   color: #aaa;
+}
+@media (min-width: 720px){
+  header{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+  .bannerpc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+@media (max-width:570px){
+  header ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bannerpc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+  #containerproductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #containerproductos .filtro-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+  }
 }

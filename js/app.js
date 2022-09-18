@@ -143,7 +143,7 @@ window.onload = function(){
 }
 const comprar = document.getElementById('btncomprar')
 
-function alertafachera(){
+function alertafachera() {
   Swal.fire(
     'Has comprado el producto!',
     "tu pedido llegara pronto",
@@ -151,46 +151,7 @@ function alertafachera(){
   )
 }
 
-comprar.addEventListener('click',alertafachera);
+comprar.addEventListener('click', alertafachera);
 
 
 
-/*function traerDatos(){
-
-  const http = new XMLHttpRequest();
-
-  http.open('GET', '../procesadoresintel.json',true);
-
-  http.send();
-
-  http.onreadystatechange = function(){
-    if(this.readyState == 4 && this.status == 200){
-      console.log(this.responseText)
-      let datos = JSON.parse(this.responseText)
-      let res = document.querySelector(contenido)
-      res.innerHTML = '';
-
-      for(let item of datos){
-          res.innerHTML += `
-          <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-            <h5 class="card-title pt-2 text-center text-primary">${valor.nombre}</h5>
-            <img src="${valor.img}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text text-white-50 description">${valor.descripcion}</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ ${valor.precio}</span></h5>
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary button">Añadir a Carrito</button>
-                </div>
-            </div>
-          </div>
-        </div>
-    
-            
-          
-          
-          `
-      }
-    }
-  }
-}*/
