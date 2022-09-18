@@ -206,19 +206,8 @@ footer .copyright {
   font-size: 13px;
   color: #aaa;
 }
-@media (min-width: 720px){
-  header{
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-  }
-  .bannerpc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 
-}
+
 @media (max-width:570px){
   header ul{
     display: flex;
