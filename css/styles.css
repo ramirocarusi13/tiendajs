@@ -222,9 +222,10 @@ footer .copyright {
 @media (max-width:570px){
   header ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .bannerpc{
     display: flex;
@@ -245,4 +246,5 @@ footer .copyright {
     width: 100%;
     margin: 0%;
   }
+
 }
