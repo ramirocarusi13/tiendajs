@@ -246,5 +246,15 @@ footer .copyright {
     width: 100%;
     margin: 0%;
   }
-
+  table {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    text-align: center;
+  }
+  table tbody {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+  }
 }

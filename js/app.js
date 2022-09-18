@@ -62,7 +62,7 @@ function renderCarrito(){
     tr.classList.add('ItemCarrito')
     const Content = `
     
-    <th scope="row">1</th>
+    <th scope="row"></th>
             <td class="table__productos">
               <img src=${item.img}  alt="">
               <h6 class="title">${item.title}</h6>
